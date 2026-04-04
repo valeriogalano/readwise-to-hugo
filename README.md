@@ -34,18 +34,18 @@ Copia `.env.example` in `.env` e imposta i seguenti valori:
 
 ```
 READWISE_ACCESS_TOKEN="<token di accesso Readwise>"
-GITHUB_TOKEN_WEBSITE="<Personal Access Token GitHub>"
-GITHUB_REPO_OWNER="<owner del repository del sito>"
-GITHUB_REPO_NAME="<nome del repository del sito>"
+GH_TOKEN_WEBSITE="<Personal Access Token GitHub>"
+GH_REPO_OWNER="<owner del repository del sito>"
+GH_REPO_NAME="<nome del repository del sito>"
 READWISE_TAG="<tag da monitorare su Readwise Reader>"
 ```
 
 | Variabile | Descrizione |
 |---|---|
 | `READWISE_ACCESS_TOKEN` | Token di accesso Readwise ([ottienilo qui](https://readwise.io/access_token)) |
-| `GITHUB_TOKEN_WEBSITE` | PAT GitHub con permesso `contents: write` sul repo del sito |
-| `GITHUB_REPO_OWNER` | Owner del repository del sito (es. `valeriogalano`) |
-| `GITHUB_REPO_NAME` | Nome del repository del sito (es. `pensieriincodice-website`) |
+| `GH_TOKEN_WEBSITE` | PAT GitHub con permesso `contents: write` sul repo del sito |
+| `GH_REPO_OWNER` | Owner del repository del sito (es. `valeriogalano`) |
+| `GH_REPO_NAME` | Nome del repository del sito (es. `pensieriincodice-website`) |
 | `READWISE_TAG` | Tag da monitorare su Readwise Reader (default: `hugo-news`) |
 
 ---

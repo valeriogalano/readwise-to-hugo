@@ -6,9 +6,9 @@ import pytest
 
 @pytest.fixture(autouse=True)
 def env_vars(monkeypatch):
-    monkeypatch.setenv("GITHUB_TOKEN_WEBSITE", "test-gh-token")
-    monkeypatch.setenv("GITHUB_REPO_OWNER", "testowner")
-    monkeypatch.setenv("GITHUB_REPO_NAME", "testrepo")
+    monkeypatch.setenv("GH_TOKEN_WEBSITE", "test-gh-token")
+    monkeypatch.setenv("GH_REPO_OWNER", "testowner")
+    monkeypatch.setenv("GH_REPO_NAME", "testrepo")
 
 
 def mock_response(status):

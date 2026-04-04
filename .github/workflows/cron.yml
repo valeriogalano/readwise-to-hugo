@@ -35,9 +35,9 @@ jobs:
       - name: Run script
         env:
           READWISE_ACCESS_TOKEN: ${{ secrets.READWISE_ACCESS_TOKEN }}
-          GITHUB_TOKEN_WEBSITE: ${{ secrets.GITHUB_TOKEN_WEBSITE }}
-          GITHUB_REPO_OWNER: ${{ vars.GITHUB_REPO_OWNER }}
-          GITHUB_REPO_NAME: ${{ vars.GITHUB_REPO_NAME }}
+          GH_TOKEN_WEBSITE: ${{ secrets.GH_TOKEN_WEBSITE }}
+          GH_REPO_OWNER: ${{ vars.GH_REPO_OWNER }}
+          GH_REPO_NAME: ${{ vars.GH_REPO_NAME }}
           READWISE_TAG: ${{ vars.READWISE_TAG }}
         run: python main.py
 

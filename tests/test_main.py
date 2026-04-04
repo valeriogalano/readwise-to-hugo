@@ -7,9 +7,9 @@ from unittest.mock import patch, mock_open
 @pytest.fixture(autouse=True)
 def env_vars(monkeypatch):
     monkeypatch.setenv("READWISE_ACCESS_TOKEN", "tok")
-    monkeypatch.setenv("GITHUB_TOKEN_WEBSITE", "gh-tok")
-    monkeypatch.setenv("GITHUB_REPO_OWNER", "owner")
-    monkeypatch.setenv("GITHUB_REPO_NAME", "repo")
+    monkeypatch.setenv("GH_TOKEN_WEBSITE", "gh-tok")
+    monkeypatch.setenv("GH_REPO_OWNER", "owner")
+    monkeypatch.setenv("GH_REPO_NAME", "repo")
 
 
 def load_state_from(data):

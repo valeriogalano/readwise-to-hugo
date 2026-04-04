@@ -9,9 +9,9 @@ logger = logging.getLogger("github_client")
 
 class GitHubClient:
     def __init__(self):
-        self.token = os.environ["GITHUB_TOKEN_WEBSITE"]
-        self.owner = os.environ["GITHUB_REPO_OWNER"]
-        self.repo = os.environ["GITHUB_REPO_NAME"]
+        self.token = os.environ["GH_TOKEN_WEBSITE"]
+        self.owner = os.environ["GH_REPO_OWNER"]
+        self.repo = os.environ["GH_REPO_NAME"]
         self.api_url = "https://api.github.com"
         self.headers = {
             "Authorization": f"Bearer {self.token}",
