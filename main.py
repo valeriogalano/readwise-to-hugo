@@ -41,7 +41,7 @@ def save_processed(processed_ids):
 
 def main():
     tag = os.environ.get("READWISE_TAG", "hugo-news")
-    lookback_hours = int(os.environ.get("READWISE_LOOKBACK_HOURS", DEFAULT_LOOKBACK_HOURS))
+    lookback_hours = int(os.environ.get("READWISE_LOOKBACK_HOURS") or DEFAULT_LOOKBACK_HOURS)
     since = (datetime.now() - timedelta(hours=lookback_hours)).isoformat()
 
     rw = Readwise()
